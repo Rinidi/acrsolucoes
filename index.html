@@ -1,0 +1,75 @@
+<!-- 
+Empresa: ACR Soluções em TI
+Autor: @MarceilleSantos - Estagiária
+Data: 20/01/2017 (início desse layout)
+Publicação: 23/02/2017
+-->
+<!DOCTYPE html>   <!--Informa que o site foi elaborado em HTML 5-->
+<html lang="pt-br">  <!--Define o idioma que o código está sendo escrito-->
+
+<head>   <!--Configurações comportamentais do site--> 	
+	<meta charset="UTF-8"/>   <!--TAG que define o conjunto de caracteres latino: UTF-8 (acentuação)-->
+	<title> ACR Soluções em TI </title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>  <!-- Chama a página de estilos CSS -->
+	<link rel="shortcut icon" href="_imagens/icone.ico" type="image/x-icon">  <!-- icone na aba do navegador-->
+</head>
+
+<body>
+	<!-- Criando áreas de divisão (DIVs)  -->
+	
+	<!-- REDES SOCIAIS-->
+	<div id="redes-sociais">
+        <ul>
+			<!--Após inserir o link, há um comando target="_blank" que faz abrir o link numa nova aba no navegador-->
+            <li><a href="https://www.facebook.com/ACR-Solu%C3%A7%C3%B5es-em-TI-661919510527031/?fref=ts" target="_blank"><img src="_imagens/facebook.png"></a></li>
+			
+			<li><a href="https://plus.google.com/105330117104248244929" target="_blank"><img src="_imagens/gmail.png"></a></li>
+			
+			<li><a href="https://br.linkedin.com/in/robson-silva-297a5145" target="_blank"><img src="_imagens/linkedin.png"></a></li>
+        </ul>
+    </div> 
+	
+	<p id="frase-empresa"> Somos a solução para a sua empresa!<br/> Contato: (35)9 9108-3257</p>
+	
+	<!-- INTERFACE-->
+	<div id="interface">
+	
+		<!-- CABEÇALHO -->
+		<header id="cabecalho">
+			<!-- CONTAINER de navegação - MENU-->
+			<nav id="menu">
+				<h2> Menu Principal</h2>
+				<ul> <!--lista não ordenada-->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="parceiros.html">Parceiros</a></li>
+					<li><a href="faleconosco.php">Fale conosco</a></li>
+				</ul>
+			</nav> <!-- fim MENU-->
+		</header>  <!-- fim CABEÇALHO -->
+
+		<!-- CONTEÚDO -->
+		<section id="corpo-texto">
+			<h2>A EMPRESA</h2>
+
+			<div id="texto-empresa">
+				<!-- target="_blank" Abre o link numa nova aba do navegador-->
+				<!-- A tag <em> serve para dar mais ênfase ao texto selecionado. Ajuda os buscadores de pesquisa.-->
+				<p>A <a href="index.html" target="_blank"><em>ACR Soluções em TI</em></a> é uma empresa prestadora de serviços na área de Informática, realizando atendimentos com qualidade.</p>
+				<p>O responsável é o analista Robson Ap. Silva, graduado em Sistemas de Informação pela UNIFEI (Universidade Federal de Itajubá-MG) e Técnico em Eletrônica Industrial pelo CEP (Centro de Educação Profissional Tancredo Neves - Brazópolis-MG)</p>
+				<p> A sede da empresa está localizada na cidade de Brazópolis, sul de Minas Gerais.</p>
+			</div> <!-- fim TEXTO-EMPRESA-->
+				
+			<figure id="imagem-empresa">
+				<img src="_imagens/manutencao.jpg">
+			</figure> <!-- fim IMAGEM-EMPRESA-->
+				
+		</section><!-- fim CORPO DO TEXTO-->
+		<!--
+		<footer id="rodape">
+		<h3>Copyright &copy; 2017 - by ACR Soluções em TI</h3>
+		</footer>
+		-->
+	</div> <!-- fim INTERFACE-->
+</body>
+</html>

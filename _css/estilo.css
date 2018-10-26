@@ -1,0 +1,256 @@
+/*Algumas cores utilizadas foram pesquisadas no Material Designer do Google no site: https://material.io/guidelines/style/color.html#color-color-palette */
+	 
+@charset "UTF-8";  /*Definindo o conjunto de caracteres para aceitar acentuação*/
+@import url(https://fonts.googleapis.com/css?family=Raleway); /*Importando fonte diferenciada para o texto do site*/
+
+/*FORMATAÇÃO GERAL*/	
+	body{
+		font-family: 'Raleway', sans-serif;
+		/*background-color: #fafafa; /*cinza claro*/
+		background: url("../_imagens/fundo-textura.jpg") repeat;
+	}
+	
+/*ICONES REDES SOCIAIS*/
+	#redes-sociais{
+	  display: block;
+	}
+	
+	#redes-sociais ul{
+		list-style:none; /*retira os pontos da lista não ordenada*/
+		position: absolute;  /*posição do objeto em relação a toda a página*/
+		top: 0px;
+		left: 1010px;
+	}
+	
+	#redes-sociais li{
+		display:inline-block; /*Icones em linha horizontal*/
+		margin: 10px;
+	}
+	
+/*FORMATAÇÃO GERAL*/
+	#frase-empresa{
+		display: block;
+		position: absolute;
+		top: 85px;
+		left: 965px;
+		color:#9e9e9e;
+		text-align:right;
+	}
+	
+	#cabecalho{
+		height: 207px; 
+		background: url("../_imagens/logo-acr.png") no-repeat;
+		/*A logo da empresa fica como fundo e não como imagem solta no site*/
+	}
+
+	p{
+		text-align: justify;
+		color: #212121; /*#424242;*/
+		/*text-indent: 50px;  Recuo da primeira linha do parágrafo*/ 
+	}
+	
+	h3{
+		color: #424242; /*cinza do texto*/
+	}
+	
+	h2{
+		color:#eb6709; /*Laranja dos títulos*/
+	}
+	
+	#interface{
+		margin: 0px 80px;  /*valores das margens para trabalhar com posicionamento do conteúdo diante a página toda*/
+		padding: 10px; /*espaço interno do objeto*/
+	}
+	
+	#cabecalho{
+		padding-bottom: 10px;
+		float:bottom;
+	}	
+	
+/*FORMATAÇÃO DO MENU*/
+	#menu{
+		display: block;  /*Transformar num bloco, pois um bloco pode flutuar pela tela*/
+	}
+
+	/*Lista em geral*/
+	#menu ul{
+		list-style:none; /*retira os pontos da lista não ordenada*/
+		text-transform: uppercase; /*o texto fica todo em maiúsculo*/
+		position: absolute;  /*posição do objeto em relação a toda a página*/
+		top: 172px;
+		left: 744px;
+	}
+	
+	/*Itens da lista*/
+	#menu li{
+		display:inline-block;  /*coloca os itens do menu em horizontal*/
+		background-color: #f19733; /*FF9800 laranja escuro*/
+		border-radius: 5px 5px 0px 0px;
+		padding: 15px; /*espaço dentro do item*/
+		margin: 0px;  /*espaço fora do item*/
+		transition: background-color 1s;  /*efeito de transição ao passar o mouse nos itens do menu*/
+	}
+/*
+	#menu li:hover{
+		background-color:#fafafa;
+		color: #FF9800;
+	}
+*/	
+	#menu h2{
+		display:none; /*O texto menu principal não aparece na página*/
+	}
+	
+	#menu a{
+		font-size:12pt;
+		color: #ffffff; /*branco*/
+		text-decoration: none;
+	}
+	
+	#menu a:hover{
+		color: #A0522D; /*cor marrom*/
+	}
+
+/*CORPO DO TEXTO*/	
+	#corpo-texto{
+		background-color: rgba(255,255,255, 0.6); /*branco com transparência*/
+		border: 1px solid #f19733; /*#FF9800 laranja escuro*/
+		border-radius: 5px 0px 5px 5px; /*arredondamento da borda*/
+		padding: 0px 20px;
+		margin:auto auto 10px auto;
+		position:absolute;
+		width: 1110px; /*largura da div*/
+		display:table;
+	}
+
+/* CONTEÚDO HOME */	
+	#texto-empresa{
+		display:table-cell;
+		float:left;
+		width:450px;
+	}
+	
+	#imagem-empresa{
+		display:table-cell;
+		float:right;
+		margin: -35px 0px 25px 0px;  /*Margens: em cima - esquerda - em baixo - direita*/
+	}
+		
+/* CONTEÚDO SERVIÇOS */	
+	#texto-servico1{
+		display:table-cell; /*Forma de exibição como tabela para posicionar texto e imagem lado a lado*/
+		float:left;   /*flutuação à esquerda*/
+		width:480px;  /*largura da div*/ 
+		margin:10px 40px;  /*margem da div*/
+	}
+	
+	#imagem-servico1{
+		display:table-cell;
+		float:right;
+		margin:-5px 10px;
+		width:480px;
+	}
+
+	#texto-servico2{
+		display:table-cell;
+		float:left;
+		width:480px;
+		margin:60px 50px;
+	}
+	
+	#imagem-servico2{
+		display:table-cell;
+		float:right;
+		margin:60px 10px;
+		width:480px;
+	}	
+	
+	#texto-servico3{
+		display:table-cell;
+		float:left;
+		width:480px;
+		margin:40px 50px;
+	}
+	
+	#imagem-servico3{
+		display:table-cell;
+		float:right;
+		margin:5px 10px 20px 10px;
+		width:480px;
+		padding:-5px;
+	}	
+	
+	#texto-servico4{
+		display:table-cell;
+		float:left;
+		width:480px;
+		margin:60px 50px;
+	}
+	
+	#imagem-servico4{
+		display:table-cell;
+		float:right;
+		margin:30px 10px 20px 10px;
+		width:480px;
+		padding:-5px;
+	}	
+
+/* CONTEÚDO PARCEIROS */	
+	#frase-parceiros{
+		text-align:center;
+		margin: auto;
+	}
+	
+	#solucao-empresa{
+		text-align:center;
+		margin: auto;
+		color: #eb6709;
+	}
+	
+	#tabela-parceiros{
+		margin:50px auto 10px auto;
+		text-align:center;
+		/*border: 1px solid #f19733;*/
+	}
+	
+	#tabela-parceiros td{
+		padding:0px 50px 10px 50px;
+		text-align: center;
+		/*border: 1px solid #f19733;*/
+	}
+	
+/*CONTEÚDO FALE CONOSCO*/
+	#mapa-google{
+		width:500px;
+		height:350px;
+		border: 0px;
+		margin:20px 20px 20px 0px;
+	}
+	
+	#contato{
+		display:block;
+		float:left;
+		width: 500px;
+	}
+	
+	#f-contato{
+		display:block;
+		float: right;
+		width:550px;
+	}
+	
+	#dados-form{
+		border: 1px solid #f19733;
+		border-radius: 5px;
+		margin:auto;
+	}
+	
+/*RODAPÉ
+	#rodape{
+		/*clear:both;  /*limpar a configuração anterior
+		/*background-color:red;
+		position:relative;
+		text-align:center;
+		position:absolute;
+		bottom:0;
+	}
+*/
